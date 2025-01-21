@@ -8,7 +8,6 @@ const menuStore = useMenuStore()
 const classObj = computed(() => {
   return {
     hideSidebar: menuStore.state,
-    openSidebar: !menuStore.state,
   }
 })
 </script>
@@ -25,13 +24,13 @@ const classObj = computed(() => {
 </template>
 
 <style lang="scss" scoped>
-@use '../styles/variables.scss' as vars;
+@use '../styles/variables' as vars;
+@use '../styles/mixin' as min;
 .app-wrapper {
-  // width: calc(100vw - vars.$sideBarWidth);
-  width: 100%;
-  margin-left: vars.$sideBarWidth;
-  height: 100%;
+  @include min.clearfix;
   position: relative;
+  height: 100%;
+  width: 100%;
   border: 1px solid red;
 }
 

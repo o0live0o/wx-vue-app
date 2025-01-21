@@ -12,6 +12,7 @@
 <script setup lang="ts">
 </script>
 <style lang="scss">
+@use '../../styles/variables.scss' as vars;
 .app-main {
   min-height: calc(100vh - 50px);
   width: 100%;

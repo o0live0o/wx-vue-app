@@ -2,8 +2,5 @@
 </script>
 
 <template>
-  <div class="about">
-    <h1>This is an home page</h1>
-    <input type="text" />
-  </div>
+  <div class="about"></div>
 </template>
